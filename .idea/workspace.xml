@@ -1,0 +1,2103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d9778c8-73cd-4c40-885c-1fbd9452465a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controller/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controller/Api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controller/Categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controller/Home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controller/Posts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/controller/Users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/core/Response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/core/application.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/core/controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/core/helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/core/init.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/model/category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/model/model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/model/post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/model/user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/__templates/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/__templates/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/__templates/sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/comments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/create_category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/create_post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/edit_category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/edit_posts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/edit_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/posts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/admin/users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/view/home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_demo.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Client/detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Client/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/chocolat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/AdminLTE.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/AdminLTE.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/_all-skins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/_all-skins.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-black-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-black-light.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-black.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-black.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-blue-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-blue-light.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-blue.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-green-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-green-light.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-purple-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-purple-light.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-purple.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-red-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-red-light.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-red.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-yellow-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-yellow-light.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/css/skins/skin-yellow.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/avatar04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/boxed-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/boxed-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/cirrus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/mestro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/credit/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/default-50x50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/photo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/photo4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user1-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user3-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user4-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user5-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user6-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user7-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/img/user8-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/app.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/pages/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/pages/dashboard2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/avatargintama.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/banner-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/1-1478750528106.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/1-1481559268437.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/1-ngang-1481643167450.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/15423611-10206419271595381-1648679647-n-1481475257544.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/161212musikbigbangmv7-1481556652043.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/161214musikjessicabismcamdien1-1481689642444.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/161226musikinstizchartava-1482738454708.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/2595e124451e10fda4a61fa300af6b61.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/4-1644984300-4064-1644984328.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/4aotrenai-1481678911899.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/5-1480749230543.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/X-DAY Virtual Background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/ava1-1481516127264-0-0-418-668-crop-1481516154989.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/batch-mlee-15-1481771603381.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/beckhams-aop-1481529571635.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/cs-luu-bich-12-JPG-1559-1644816408.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/dam.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/giphy-5-1478145366144.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/hinh-ngoctrinh-1481514674421-0-0-344-550-crop-1481514685342.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/img-6023-e1479786917248-1482375306438.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/img20161211232558280.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/lovesongvalentine-1644817257-5899-1644817295.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/phonghuong4-7780-1644572613.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/photo-1-1481441096147 (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/photo-1-1481675421763.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/photo-1-1481771631462.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/photo-1590595156335-f7d057878a-3162-7137-1644896331.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/photo1528195135899cf5d190bb3a1-9793-1507-1644982057.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/sida.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/street-style-sao-4-1481731985537.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/thoitranghanquocbiendoiqua75na-2286-8766-1645010086.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blog/top-1644897067-7589-1644897118.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/f3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/g1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/g2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/g3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/g4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/g5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/g6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/g7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/g8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/img-sp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/key2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/m1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/m2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/m3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/m4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/m5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/search-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/si.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sin1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sin2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/sing-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/social-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/social.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/t1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/t2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/t3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/t4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/user/2595e124451e10fda4a61fa300af6b61.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/user/X-DAY Virtual Background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/user/anonymous.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/user/cs-luu-bich-12-JPG-1559-1644816408.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/user/giphy-5-1478145366144.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/user/lovesongvalentine-1644817257-5899-1644817295.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/user/phonghuong4-7780-1644572613.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/user/photo-1590595156335-f7d057878a-3162-7137-1644896331.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/user/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/classie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery-2.2.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.chocolat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/modernizr.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/uisearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap-slider/bootstrap-slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap-slider/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/CHANGELOG.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/LICENSE-MIT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/bootstrap3-editable/css/bootstrap-editable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/bootstrap3-editable/img/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/bootstrap3-editable/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/bootstrap3-editable/js/bootstrap-editable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/bootstrap3-editable/js/bootstrap-editable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/address/address.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/address/address.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/typeaheadjs/lib/typeahead.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/typeaheadjs/lib/typeahead.js-bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/typeaheadjs/typeaheadjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/bootstrap-wysihtml5-0.0.2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/bootstrap-wysihtml5-0.0.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/bootstrap-wysihtml5-0.0.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/wysihtml5-0.3.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/wysihtml5-0.3.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/wysiwyg-color.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/bootstrap3-editable-1.5.1/inputs-ext/wysihtml5/wysihtml5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/chartjs/Chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/chartjs/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/adapters/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/build-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/image/dialogs/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/image/images/noimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/link/images/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/magicline/images/hidpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/magicline/images/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/magicline/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/pastefromword/filter/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/dialogs/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/table/dialogs/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/img/github-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/img/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/img/header-separator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/img/navigation-tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/js/sf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/assets/inlineall/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/assets/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/assets/uilanguages/languages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/font/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/skins/moono/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ckeditor/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/colorpicker/bootstrap-colorpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/colorpicker/bootstrap-colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/colorpicker/bootstrap-colorpicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/colorpicker/bootstrap-colorpicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/colorpicker/img/alpha-horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/colorpicker/img/alpha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/colorpicker/img/hue-horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/colorpicker/img/hue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/colorpicker/img/saturation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/css/dataTables.autoFill.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/columns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/complete-callback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/fill-both.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/fill-horizontal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/scrolling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/examples/step-callback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/images/filler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/AutoFill/js/dataTables.autoFill.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/alt_insert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/col_filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/colvis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/fixedcolumns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/fixedheader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/jqueryui.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/new_init.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/predefined.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/realtime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/reset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/scrolling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/server_side.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/examples/state_save.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/images/insert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/css/dataTables.colVis.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/css/dataTables.colVis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/css/dataTables.colvis.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/button_order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/exclude_columns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/group_columns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/jqueryui.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/mouseover.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/new_init.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/restore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/text.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/title_callback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/two_tables.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/examples/two_tables_identical.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/js/dataTables.colVis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/ColVis/js/dataTables.colVis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/bootstrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/col_filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/colvis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/css_size.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/index_column.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/left_right_columns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/right_column.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/rowspan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/server-side-processing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/size_fixed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/size_fluid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/examples/two_columns.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/css/dataTables.fixedHeader.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/header_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/top_left_right.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/two_tables.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/examples/zIndexes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/css/dataTables.keyTable.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/scrolling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/examples/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/KeyTable/js/dataTables.keyTable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/css/dataTables.responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/column-control.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/custom-renderer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/disable-child-rows.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/right-column.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/child-rows/whole-row-control.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-control/auto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-control/classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-control/complexHeader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-control/fixedHeader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-control/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/display-control/init-classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/className.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/initialisation/option.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/bootstrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/compact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/foundation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/examples/styling/scrolling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/dataTables.scroller.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/api_scrolling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/data/2500.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/data/ssp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/large_js_source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/server-side_processing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/examples/state_saving.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/images/loading-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/js/dataTables.scroller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/alter_buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/bootstrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/button_text.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/collection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/defaults.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/jqueryui.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/multi_instance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/multiple_tables.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/new_init.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/pdf_message.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/plug-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/select_column.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/select_multi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/select_os.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/select_single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/examples/swf_path.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/collection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/collection_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/copy_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/csv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/csv_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/pdf_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/print_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/psd/collection.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/psd/copy document.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/psd/file_types.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/psd/printer.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/xls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/images/xls_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/swf/copy_csv_xls.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datatables/jquery.dataTables_themeroller.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/datepicker3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.kk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.kr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.nl-BE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.rs-latin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.rs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.sw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.ua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/daterangepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/daterangepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/daterangepicker/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/daterangepicker/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fastclick/fastclick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fastclick/fastclick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/excanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.colorhelpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.colorhelpers.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.canvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.categories.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.crosshair.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.crosshair.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.errorbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.errorbars.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.fillbetween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.fillbetween.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.image.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.navigate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.navigate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.pie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.resize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.selection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.selection.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.stack.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.symbol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.symbol.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.threshold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.threshold.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/flot/jquery.flot.time.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/fullcalendar/fullcalendar.print.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/_all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/aero.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/aero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/aero@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/flat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/flat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/flat@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/grey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/grey@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/orange.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/orange@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/pink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/pink@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/purple@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/red@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/flat/yellow@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/futurico/futurico.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/futurico/futurico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/futurico/futurico@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/icheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/icheck.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/_all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/aero.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/grey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/line.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/line@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/orange.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/pink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/line/yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/_all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/aero.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/aero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/aero@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/grey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/grey@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/minimal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/minimal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/minimal@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/orange.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/orange@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/pink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/pink@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/purple@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/red@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/minimal/yellow@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/polaris/polaris.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/polaris/polaris.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/polaris/polaris@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/_all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/aero.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/aero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/aero@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/grey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/grey@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/orange.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/orange@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/pink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/pink@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/purple@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/red@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/square.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/square@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/yellow@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/input-mask/jquery.inputmask.date.extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/input-mask/jquery.inputmask.extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/input-mask/jquery.inputmask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/input-mask/jquery.inputmask.numeric.extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/input-mask/jquery.inputmask.phone.extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/input-mask/jquery.inputmask.regex.extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/input-mask/phone-codes/phone-be.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/input-mask/phone-codes/phone-codes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/input-mask/phone-codes/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ionslider/img/sprite-skin-flat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ionslider/img/sprite-skin-nice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ionslider/ion.rangeSlider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ionslider/ion.rangeSlider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ionslider/ion.rangeSlider.skinFlat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/ionslider/ion.rangeSlider.skinNice.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jQuery/jquery-2.2.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jQueryUI/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jQueryUI/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jvectormap/jquery-jvectormap-1.2.2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jvectormap/jquery-jvectormap-usa-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/knob/jquery.knob.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/morris/morris.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/morris/morris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/morris/morris.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/pace/pace.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/pace/pace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/pace/pace.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/pace/pace.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/sr-Cyrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/i18n/zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/select2.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/select2.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/select2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/select2/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/slimScroll/jquery.slimscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/slimScroll/jquery.slimscroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/sparkline/jquery.sparkline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/sparkline/jquery.sparkline.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/.agignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/.jscsrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/.jshintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/MAINTAIN.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/font/summernote.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/font/summernote.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/font/summernote.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ar-AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ar-AR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-bg-BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-bg-BG.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ca-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ca-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-cs-CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-cs-CZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-da-DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-da-DK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-de-DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-de-DE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-es-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-es-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-es-EU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-es-EU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-fa-IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-fa-IR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-fi-FI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-fi-FI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-fr-FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-fr-FR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-gl-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-gl-ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-he-IL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-he-IL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-hr-HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-hr-HR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-hu-HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-hu-HU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-id-ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-id-ID.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-it-IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-it-IT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ja-JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ja-JP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ko-KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ko-KR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-lt-LT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-lt-LT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-lt-LV.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-lt-LV.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-nb-NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-nb-NO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-nl-NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-nl-NL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-pl-PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-pl-PL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-pt-BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-pt-PT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ro-RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ro-RO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ru-RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-ru-RU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-sk-SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-sk-SK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-sl-SI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-sl-SI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-sr-RS-Latin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-sr-RS-Latin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-sr-RS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-sr-RS.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-sv-SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-sv-SE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-th-TH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-th-TH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-tr-TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-tr-TR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-uk-UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-uk-UA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-vi-VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-vi-VN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/lang/summernote-zh-TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/plugin/databasic/summernote-ext-databasic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/plugin/databasic/summernote-ext-databasic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/plugin/databasic/summernote-ext-databasic.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/plugin/databasic/summernote-ext-databasic.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/plugin/hello/summernote-ext-hello.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/plugin/hello/summernote-ext-hello.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/plugin/specialchars/summernote-ext-specialchars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/plugin/specialchars/summernote-ext-specialchars.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/summernote.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/summernote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/dist/summernote.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/airmode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/bs3fa4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/codemirror.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/external-api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/get-button.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/hint-emoji.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/hint-userdefine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/jquery-custom-event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/jquery18lt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/lang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/nativestyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/ondialog-multitab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/ondialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/plugin-hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/rtl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/examples/textarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/grunts/grunt-build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/ie8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/issue_template.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-ar-AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-bg-BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-ca-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-cs-CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-da-DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-de-DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-es-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-es-EU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-fa-IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-fi-FI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-fr-FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-gl-ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-he-IL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-hr-HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-hu-HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-id-ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-it-IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-ja-JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-ko-KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-lt-LT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-lt-LV.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-nb-NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-nl-NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-pl-PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-ro-RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-ru-RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-sk-SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-sl-SI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-sr-RS-Latin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-sr-RS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-sv-SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-th-TH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-tr-TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-uk-UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-vi-VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lang/summernote-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/lite.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/meteor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/meteor/package-standalone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/meteor/package.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/meteor/publish.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/meteor/runtests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/meteor/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/nuget-build.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/plugin/databasic/summernote-ext-databasic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/plugin/databasic/summernote-ext-databasic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/plugin/hello/summernote-ext-hello.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/plugin/specialchars/summernote-ext-specialchars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/pull_request_template.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/align-center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/align-indent.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/align-justify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/align-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/align-outdent.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/align-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/align.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/arrows-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/bold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/caret.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/chain-broken.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/code.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/eraser.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/frame.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/magic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/menu-check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/minus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/orderedlist.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/picture.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/question.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/redo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/special-character.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/strikethrough.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/subscript.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/summernote.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/superscript.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/table.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/templates/summernote.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/templates/summernote.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/text-height.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/trash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/underline.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/undo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/unorderedlist.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/icons/video.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/Context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/core/agent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/core/async.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/core/dom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/core/func.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/core/key.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/core/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/core/range.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/editing/Bullet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/editing/History.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/editing/Style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/editing/Table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/editing/Typing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/module/AutoLink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/module/AutoSync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/module/Clipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/module/Codeview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/module/Dropzone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/module/Editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/module/Fullscreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/module/Handle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/module/Placeholder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/module/Statusbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/renderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/base/summernote-en-US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/module/AirPopover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/module/Buttons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/module/HelpDialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/module/HintPopover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/module/ImageDialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/module/ImagePopover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/module/LinkDialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/module/LinkPopover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/module/Toolbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/module/VideoDialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/bs3/ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/intro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/lite/module/Toolbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/lite/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/lite/ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/outro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/js/summernote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/less/elements.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/less/elements.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/less/summernote-lite.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/less/summernote.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/src/less/summernote.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/summernote.nuspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/chaidom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/libs/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/libs/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/libs/es5-shim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/libs/jquery-1.9.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/test-main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/Context.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/core/agent.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/core/async.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/core/dom.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/core/func.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/core/key.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/core/list.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/core/range.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/editing/Bullet.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/editing/History.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/editing/Table.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/editing/Typing.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/editing/style.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/module/AutoLink.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/module/AutoSync.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/module/Clipboard.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/module/Codeview.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/module/Dropzone.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/module/Editor.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/module/Fullscreen.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/module/Handle.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/module/Placeholder.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/module/Statusbar.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/base/renderer.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/bs3/module/AirPopover.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/bs3/module/Buttons.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/bs3/module/HelpDialog.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/bs3/module/HintPopover.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/bs3/module/ImageDialog.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/bs3/module/ImagePopover.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/bs3/module/LinkDialog.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/bs3/module/LinkPopover.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/bs3/module/Toolbar.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/bs3/module/VideoDialog.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/bs3/ui.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/lite/module/Toolbar.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/test/unit/lite/ui.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/tools/NuGet.Config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/summernote-master/tools/nuget.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/timepicker/bootstrap-timepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/timepicker/bootstrap-timepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/timepicker/bootstrap-timepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/plugins/timepicker/bootstrap-timepicker.min.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1574269007">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="5" />
+          <entry key="htaccess" value="3" />
+          <entry key="html" value="4" />
+          <entry key="js" value="31" />
+          <entry key="json" value="1" />
+          <entry key="php" value="222" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="5" />
+          <entry key="HTML" value="4" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="31" />
+          <entry key="PHP" value="222" />
+          <entry key="htaccess" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="19" />
+          <entry key="js" value="563" />
+          <entry key="php" value="2067" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="19" />
+          <entry key="JavaScript" value="563" />
+          <entry key="PHP" value="2067" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controller/Users.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/core/application.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-917">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controller/Home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controller/Api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1860">
+              <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controller/Admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1120">
+              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controller/Posts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/view/admin/edit_category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="880">
+              <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/view/admin/edit_user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/model/post.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-520">
+              <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+              <folding>
+                <element signature="n#read#0;n#post#0;n#!!top" />
+                <element signature="n#related#0;n#post#0;n#!!top" />
+                <element signature="n#edit_blog#0;n#post#0;n#!!top" />
+                <element signature="n#createBlog#0;n#post#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controller/Categories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>delete_category</find>
+      <find>&lt;input type=&quot;hidden&quot; id=&quot;id_post&quot; name=&quot;id_user_DL&quot;&gt;</find>
+      <find>category_id</find>
+      <find>id_post</find>
+      <find>row</find>
+      <find>row-</find>
+      <find>toggle</find>
+      <find>row-post-</find>
+      <find>showModal_blog</find>
+      <find>modal</find>
+      <find>id_user_DL</find>
+      <find>boot</find>
+      <find>getBlogAdmin</find>
+      <find>ckediter</find>
+      <find>ck</find>
+      <find>edi</find>
+      <find>summernote</find>
+      <find>post_content</find>
+      <find>phantran</find>
+      <find>user</find>
+      <find>getT</find>
+      <find>btn_c</find>
+      <find>get_category_blog</find>
+      <find>getB</find>
+      <find>PopularBlogs</find>
+      <find>&quot;</find>
+      <find>related</find>
+      <find>getCategoryByBlog</find>
+      <find>sea</find>
+      <find>getPopularBlogs</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>'</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/public/dist/js/demo.js" />
+        <option value="$PROJECT_DIR$/application/controller/Post.php" />
+        <option value="$PROJECT_DIR$/application/view/admin/posts.php" />
+        <option value="$PROJECT_DIR$/application/view/admin/__templates/footer.php" />
+        <option value="$PROJECT_DIR$/public/init.php" />
+        <option value="$PROJECT_DIR$/application/core/init.php" />
+        <option value="$PROJECT_DIR$/application/core/controller.php" />
+        <option value="$PROJECT_DIR$/application/core/helper.php" />
+        <option value="$PROJECT_DIR$/application/controller/categories.php" />
+        <option value="$PROJECT_DIR$/application/controller/home.php" />
+        <option value="$PROJECT_DIR$/application/model/User.php" />
+        <option value="$PROJECT_DIR$/application/view/admin/__templates/sidebar.php" />
+        <option value="$PROJECT_DIR$/application/controller/users.php" />
+        <option value="$PROJECT_DIR$/application/view/admin/create_category.php" />
+        <option value="$PROJECT_DIR$/application/view/admin/users.php" />
+        <option value="$PROJECT_DIR$/application/view/admin/create_post.php" />
+        <option value="$PROJECT_DIR$/application/controller/posts.php" />
+        <option value="$PROJECT_DIR$/application/view/admin/__templates/header.php" />
+        <option value="$PROJECT_DIR$/application/model/model.php" />
+        <option value="$PROJECT_DIR$/application/model/user.php" />
+        <option value="$PROJECT_DIR$/application/view/admin/edit_posts.php" />
+        <option value="$PROJECT_DIR$/application/view/home.php" />
+        <option value="$PROJECT_DIR$/application/view/admin/categories.php" />
+        <option value="$PROJECT_DIR$/public/dist/js/script.js" />
+        <option value="$PROJECT_DIR$/application/core/Response.php" />
+        <option value="$PROJECT_DIR$/public/.htaccess" />
+        <option value="$PROJECT_DIR$/application/controller/Users.php" />
+        <option value="$PROJECT_DIR$/application/model/category.php" />
+        <option value="$PROJECT_DIR$/application/core/application.php" />
+        <option value="$PROJECT_DIR$/application/controller/Admin.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/public/js/script.js" />
+        <option value="$PROJECT_DIR$/application/view/admin/index.php" />
+        <option value="$PROJECT_DIR$/public/Client/index.html" />
+        <option value="$PROJECT_DIR$/application/view/admin/edit_category.php" />
+        <option value="$PROJECT_DIR$/application/view/admin/edit_user.php" />
+        <option value="$PROJECT_DIR$/application/controller/Api.php" />
+        <option value="$PROJECT_DIR$/application/model/post.php" />
+        <option value="$PROJECT_DIR$/application/controller/Posts.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/public/plugins/summernote-master/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="950" />
+    <option name="y" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mock" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mock" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mock" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mock" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mock" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mock" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mock" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mock" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mock" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog_php_mvc-master" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters.JSHint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\FPT\Mock\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\FPT\Mock\application\core" />
+      <recent name="C:\xampp\htdocs\FPT\Mock\public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d9778c8-73cd-4c40-885c-1fbd9452465a" name="Default Changelist" comment="" />
+      <created>1644784164379</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644784164379</updated>
+      <workItem from="1644784165510" duration="677000" />
+      <workItem from="1644804630616" duration="42805000" />
+      <workItem from="1644871618919" duration="89000" />
+      <workItem from="1644888337938" duration="17723000" />
+      <workItem from="1644979326534" duration="42487000" />
+      <workItem from="1645064569219" duration="25835000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="129616000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="4" side_tool="true" weight="0.1785235" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="0" side_tool="true" visible="true" weight="0.1785235" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/css/chocolat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/Post.php" />
+    <entry file="file://$PROJECT_DIR$/public/dist/js/demo.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dist/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3360" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Client/index.php" />
+    <entry file="file://$PROJECT_DIR$/.vscode/settings.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Client/detail.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/ckeditor/contents.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/ckeditor/styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1920" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/ckeditor/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-457" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/__templates/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2660">
+          <caret line="133" column="73" selection-start-line="133" selection-start-column="73" selection-end-line="133" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/__templates/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="40" column="78" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/classie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/__templates/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/create_post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1060">
+          <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="50" column="124" selection-start-line="50" selection-start-column="110" selection-end-line="50" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dist/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9020">
+          <caret line="509" column="7" selection-start-line="509" selection-start-column="7" selection-end-line="509" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/home.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="52" column="66" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/model/model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/helper.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
+          <folding>
+            <element signature="n#getStatusCodeMeeage#0;n#Response#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/model/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="193" column="29" selection-start-line="193" selection-start-column="29" selection-end-line="193" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="142" column="73" selection-start-line="142" selection-start-column="73" selection-end-line="142" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../FPT-Udemy/mvc-framework-main/libs/Router.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/create_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="42" column="26" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="42" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/edit_posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="54" column="67" selection-start-line="54" selection-start-column="67" selection-end-line="54" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/model/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/edit_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/Categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/view/admin/edit_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-917">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/model/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-520">
+          <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+          <folding>
+            <element signature="n#read#0;n#post#0;n#!!top" />
+            <element signature="n#related#0;n#post#0;n#!!top" />
+            <element signature="n#edit_blog#0;n#post#0;n#!!top" />
+            <element signature="n#createBlog#0;n#post#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controller/Posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
