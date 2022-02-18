@@ -104,6 +104,7 @@ class post extends Model {
             echo $e->getMessage();
         }
     }
+
     public function getBlogAdmin($from,$so_tin_1trang)
     {
         $sql = "SELECT a.*, b.name_category, c.username FROM blogs a INNER JOIN categories b ON a.category_id = b.category_id INNER JOIN users c ON a.user_id = c.user_id ORDER BY a.created_at DESC LIMIT  $from, $so_tin_1trang ";

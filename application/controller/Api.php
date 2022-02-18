@@ -131,7 +131,24 @@ class Api extends Controller
             else {
                 Response::json(404,'Khong co');
             }
-        }
+    }
 //    }
+//    public function paging($trang=1){
+//        $totalPosts = $this->model('post')->getTotal();
+//        $so_post = count($totalPosts);
+//        $so_trang = ceil($so_post / 4);
+//        if ($so_post < 4 ) {
+//            $trang_hien_tai = 0;
+//            $so_trang = 1;
+//        }
+//        else {
+//            $trang_hien_tai = ($trang - 1)*4;
+//        }
+//
+//        $load_view_user = $this->model('post')->getBlogAdmin($trang_hien_tai,1);
+//        Response::json(200,$load_view_user);
+//    }
+
+
 }
 ?>
