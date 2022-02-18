@@ -300,37 +300,37 @@ $(document).ready(function () {
             }
         })
     })
-    // $("#search").keyup(function () {
-    //     var search =  $("#search").val();
-    //     if (search == ""){
-    //         $(".results_search").css("display", "none");
-    //     }else {
-    //         $.ajax({
-    //             method: "post",
-    //             url: "http://localhost:8000/api/search/",
-    //             data: {
-    //                 search: search,
-    //                 action: "search"
-    //             },
-    //             success:function (data) {
-    //                 console.log(data);
-    //                 $(".results_search").css("display", "block");
-    //                 data = JSON.parse(data);
+    $("#search").keyup(function () {
+        var search =  $("#search").val();
+        if (search == ""){
+            $(".results_search").css("display", "none");
+        }else {
+            $.ajax({
+                method: "post",
+                url: "http://localhost:8000/api/search/",
+                data: {
+                    search: search,
+                    action: "search"
+                },
+                success:function (data) {
+                    console.log(data);
+                    $(".results_search").css("display", "block");
+                    data = JSON.parse(data);
 
-    //                     var html = "";
-    //                     for (var i = 0; i < data.length; i++)
-    //                     {
-    //                         html += `<li><a class="detail" data-id=${data[i].blog_id} " >${data[i].title} </a></li>`;
+                        var html = "";
+                        for (var i = 0; i < data.length; i++)
+                        {
+                            html += `<li><a class="detail" data-id=${data[i].blog_id} " >${data[i].title} </a></li>`;
 
-    //                     }
-    //                     $("#results_search").html(html);
+                        }
+                        $("#results_search").html(html);
 
-    //             }
-    //         })
-    //     }
+                }
+            })
+        }
 
 
-    // })
+    })
 
 
     
