@@ -53,13 +53,13 @@ $(document).ready(function () {
                                 </div>
                                 <div class="col-md-8 wthree-right wow fadeInDown animated" data-wow-duration=".8s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInDown;">
                                     <h3>
-                                        <a href="#">${blog.title}</a>
+                                        <a class="detail" data-id=${blog.blog_id}>${blog.title}</a>
                                     </h3>
                                     <h6>
                                         <a href="#">At</a> ${blog.created_at} </h6>
                                     <p>${blog.description}</p>
                                     <div class="bht1">
-                                        <a class="detail" data-id=${blog.blog_id} " >Read More</a>
+                                        <a class="detail" data-id=${blog.blog_id} >Read More</a>
                                     </div>
                                     <div class="soci">
                                         <ul>
@@ -132,7 +132,7 @@ $(document).ready(function () {
             .then(function (response) {
                 return response.json();
             }).then(function (blog) {
-                console.log(blog)
+                // console.log(blog)
                 var detail_blog = $("#list_blog")
                 // document.getElementById("listBlog").style.display = 'none';
 
@@ -147,7 +147,7 @@ $(document).ready(function () {
                             <div class="b-bottom">
                                 <h5 class="top">${blog.title}</h5>
                             </div>
-                            <p>${blog.content}</p> 
+                            <div>${blog.content}</div> 
                         </div>
                         
                         <div class="clearfix"></div>
@@ -174,12 +174,12 @@ $(document).ready(function () {
                     </div>
                         `;
                 detail_blog.html(str);
-                related(blog.category_id);
+                related(blog.category_id,blog.blog_id);
             })
 
     }
     // Bai viet liên quan
-    function related(id) {
+    function related(id,blog_id) {
         var bvlq = 'http://localhost:8000/api/related_posts/';
         fetch(bvlq + id)
             .then(function (response) {
@@ -187,113 +187,146 @@ $(document).ready(function () {
             }).then(function (bvlq) {
                 var detail_blog = $("#related_blog")
                 let lq = Object.values(bvlq);
+                let str = '<h4>Bài viết liên quan</h4>';
+                
                 if (lq.length) {
-                    let str = '<h4>Bài viết liên quan</h4>';
-                    console.log(lq);
-                    for (let i = 0; i < lq.length - 1; i++) {
-                        str += ` 
-                                    
-                                    <div class="blog-grid-left">
-                                        <a href="#"><img src="http://localhost:8000/${lq[i].image}" class="img-responsive" alt=""></a>
-                                    </div>
-                                    <div class="blog-grid-right">
-                                        <h5><a class="detail" data-id=${lq[i].blog_id}>${lq[i].title}</a></h5>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="clearfix"></div>
-                                `;
+                    // console.log(lq);
+                    let count = 0;
+                    for (let i = 0; i < lq.length; i++) {
+                        if (count < 5 && lq[i].blog_id && lq[i].blog_id != blog_id)
+                        {
+                            str += `          
+                            <div class="blog-grid-left">
+                                <a href="#"><img src="http://localhost:8000/${lq[i].image}" class="img-responsive" alt=""></a>
+                            </div>
+                            <div class="blog-grid-right">
+                                <h5><a class="detail" data-id=${lq[i].blog_id}>${lq[i].title}</a></h5>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="clearfix"></div>
+                        `;
+                        count++
+                        }
                     }
-                    detail_blog.children().remove();
-                    detail_blog.append(str);
                 }
+
+                detail_blog.children().remove();
+                detail_blog.append(str);
+
             })
         // .catch(function (err) {
         //     str='';
         //     detail_blog.append(str);
         // });
     }
-    // Bài viết theo category
-    function categories(id) {
-        var bvlq = 'http://localhost:8000/api/related_posts/';
-        fetch(bvlq + id)
-            .then(function (response) {
-                return response.json();
-            }).then(function (bvlq) {
-                var detail_blog = $("#list_blog")
-                let lq = Object.values(bvlq);
-                if (lq.length) {
-                    let str = '';
-                    console.log(lq);
-                    for (let i = 0; i < lq.length - 1; i++) {
+// Bài viết theo category
+function categories(id) {
+    var bvlq = 'http://localhost:8000/api/related_posts/';
+    fetch(bvlq + id)
+        .then(function (response) {
+            return response.json();
+        }).then(function (bvlq) {
+            var detail_blog = $("#list_blog")
+            let lq = Object.values(bvlq);
+            if (lq.length) {
+                let str = '';
+                // console.log(lq);
+                for (let i = 0; i < lq.length ; i++) {
+                    if(lq[i].blog_id){
                         str += ` 
-                                        <div class="col-md-4 blog-grid" style="height: 500px ">
-                                            <div class="blog-grid-left1">
-                                            <a class="detail" data-id=${lq[i].blog_id} ><img src="http://localhost:8000/${lq[i].image}" alt=" "
-                                            class="img-responsive" style="width: 300px; height: 200px;"></a>
-                                            </div>
-                                            <div class="blog-grid-right1">
-                                            <a class="detail" data-id=${lq[i].blog_id}>${lq[i].title}</a>
-                                                <h4><?php echo $music["created_at"] ?></h4>
-                                                <p>${lq[i].description}</p>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div class="more m1">
-                                            <a class="detail" data-id=${lq[i].blog_id} >Read More</a>
-                                            </div>
-                                 
+                                <div class="col-md-4 blog-grid" style="height: 500px ">
+                                    <div class="blog-grid-left1">
+                                    <a class="detail" data-id=${lq[i].blog_id} ><img src="http://localhost:8000/${lq[i].image}" alt=" "
+                                    class="img-responsive" style="width: 300px; height: 200px;"></a>
+                                    </div>
+                                    <div class="blog-grid-right1">
+                                    <a class="detail" data-id=${lq[i].blog_id}>${lq[i].title}</a>
+                                        <h4><?php echo $music["created_at"] ?></h4>
+                                        <p>${lq[i].description}</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="more m1">
+                                    <a class="detail" data-id=${lq[i].blog_id} >Read More</a>
+                                    </div>
                                 <div class="clearfix"></div>
                             </div>      
                 `;
                     }
-                    detail_blog.children().remove();
-                    detail_blog.append(str);
+                    
                 }
-            })
-        // .catch(function (err) {
-        //     str='';
-        //     detail_blog.append(str);
-        // });
-    }
-
-    //Login
-    $(document).on('submit', '#form_login', function (e) {
-        e.preventDefault();
-        var username = $("#usernameLog").val();
-        var password = $("#passwordLog").val();
-        console.log($(this).serialize())
-        $(".errorLog").text("");
-        $.ajax({
-            method: "post",
-            url: "http://localhost:8000/users/login",
-            data: $(this).serialize(),
-            dataType: 'json',
-
-            success: function (data) {
-
-                if (data.error == false) {
-                    var html = "<div class='btn-group'> " +
-                        "<button type='button' class='btn button_logout '>" + "Xin chào: " + username + "</button> " +
-                        "<button type='button' class='btn dropdown-toggle button_logout' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'> <span class='caret'></span> <span class='sr-only'>Toggle Dropdown</span> </button> " +
-                        "<ul class='dropdown-menu menu_user'> " +
-                        "<li><a href='#' onclick= 'logout()' >Đăng xuất</a></li> "
-                    $("#login").remove();
-                    $("#username").html(html);
-                    $("#myModal").modal("toggle");
-                } else {
-                    $(".errorLog").text(data.message);
-                }
+                detail_blog.children().remove();
+                detail_blog.append(str);
             }
         })
-        sessionStorage.setItem('user', username);
-        // sessionStorage.setItem('pass',password);
+    // .catch(function (err) {
+    //     str='';
+    //     detail_blog.append(str);
+    // });
+}
 
-    });
+//Login
+$(document).on('submit', '#form_login', function (e) {
+    e.preventDefault();
+    var username = $("#usernameLog").val();
+    var password = $("#passwordLog").val();
+    console.log($(this).serialize())
+    $(".errorLog").text("");
+    $.ajax({
+        method: "post",
+        url: "http://localhost:8000/users/login",
+        data: $(this).serialize(),
+        dataType: 'json',
 
-    // search
-    $(document).ready(function () {
-        $(document).on('submit', '#form_search', function (e) {
-            e.preventDefault();
-            var search = $("#search").val();
+        success: function (data) {
+
+            if (data.error == false) {
+                var html = "<div class='btn-group'> " +
+                    "<button type='button' class='btn button_logout '>" + "Xin chào: " + username + "</button> " +
+                    "<button type='button' class='btn dropdown-toggle button_logout' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'> <span class='caret'></span> <span class='sr-only'>Toggle Dropdown</span> </button> " +
+                    "<ul class='dropdown-menu menu_user'> " +
+                    "<li><a href='#' onclick= 'logout()' >Đăng xuất</a></li> "
+                $("#login").remove();
+                $("#username").html(html);
+                $("#myModal").modal("toggle");
+            } else {
+                $(".errorLog").text(data.message);
+            }
+        }
+    })
+    sessionStorage.setItem('user', username);
+    // sessionStorage.setItem('pass',password);
+
+});
+
+// search
+$(document).ready(function () {
+    $(document).on('submit', '#form_search', function (e) {
+        e.preventDefault();
+        var search = $("#search").val();
+        $.ajax({
+            method: "post",
+            url: "http://localhost:8000/api/search/",
+            data: {
+                search: search,
+                action: "search"
+            },
+            success: function (data) {
+                data = JSON.parse(data);
+                console.log(data);
+                var html = "";
+                // console.log(data.length);
+                for (var i = 0; i < data.length; i++) {
+                    html += "<a>" + data[i].title + "</a></br>";
+                }
+                $("#results_search").append(html);
+            }
+        })
+    })
+    $("#search").keyup(function () {
+        var search = $("#search").val();
+        if (search == "") {
+            $(".results_search").css("display", "none");
+        } else {
             $.ajax({
                 method: "post",
                 url: "http://localhost:8000/api/search/",
@@ -302,43 +335,18 @@ $(document).ready(function () {
                     action: "search"
                 },
                 success: function (data) {
-                    data = JSON.parse(data);
                     console.log(data);
+                    $(".results_search").css("display", "block");
+                    data = JSON.parse(data);
+
                     var html = "";
-                    // console.log(data.length);
                     for (var i = 0; i < data.length; i++) {
-                        html += "<a>" + data[i].title + "</a></br>";
+                        html += `<li><a class="detail" data-id=${data[i].blog_id} " >${data[i].title} </a></li>`;
                     }
-                    $("#results_search").append(html);
+                    $("#results_search").html(html);
                 }
             })
-        })
-        $("#search").keyup(function () {
-            var search = $("#search").val();
-            if (search == "") {
-                $(".results_search").css("display", "none");
-            } else {
-                $.ajax({
-                    method: "post",
-                    url: "http://localhost:8000/api/search/",
-                    data: {
-                        search: search,
-                        action: "search"
-                    },
-                    success: function (data) {
-                        console.log(data);
-                        $(".results_search").css("display", "block");
-                        data = JSON.parse(data);
-
-                        var html = "";
-                        for (var i = 0; i < data.length; i++) {
-                            html += `<li><a class="detail" data-id=${data[i].blog_id} " >${data[i].title} </a></li>`;
-
-                        }
-                        $("#results_search").html(html);
-                    }
-                })
-            }
-        })
+        }
     })
+})
 })
