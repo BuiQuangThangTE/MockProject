@@ -27,7 +27,6 @@ class Api extends Controller
         } else {
             Response::json(200, []);
         }
-
     }
 
     public function getPopular()
@@ -98,7 +97,6 @@ class Api extends Controller
 
     public function getBlog($trang)
     {
-
         $totalPosts = $this->model('post')->getTotal();
         $so_post = count($totalPosts);
         $so_trang = ceil($so_post / 4);
@@ -116,19 +114,6 @@ class Api extends Controller
 
         Response::json(200, $arr);
     }
-
-    public function paging()
-    {
-        $totalPosts = $this->model('post')->getTotal();
-        $so_post = count($totalPosts);
-        $so_trang = ceil($so_post / 4);
-        return $so_trang;
-    }
-
-    public function getCategory()
-    {
-    }
-
 }
 
 ?>
