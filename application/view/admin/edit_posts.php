@@ -59,7 +59,9 @@
                     <textarea name="edit_post_content" id="edit_post_content" cols="30" rows="30" style="display: none"><?php echo $edit_blog['content']?></textarea>
                     <p>Nội dung:</p> <div id="post_content_edit"></div>
                     <div class="modal-footer">
-
+                        <button type="button" class="btn btn-default" data-dismiss="modal" >
+                            <a href="<?php echo URL ?>posts/index">Đóng</a>
+                        </button>
                         <button type="submit" class="btn btn-primary" name="btn_edit_post" id="edit_post">Đăng</button>
                     </div>
                 </form>
