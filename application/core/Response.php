@@ -55,6 +55,7 @@
             $status_header = 'HTTP/1.1 ' . $status . ' ' . self::getStatusCodeMeeage($status);
             header($status_header);
             header('Content-type:text/html');
+//            header('Content-Type: application/json');
             echo json_encode($body);
         }
     }

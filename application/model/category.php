@@ -1,6 +1,9 @@
 <?php
 require_once APP.'model/Model.php';
 class category extends Model{
+    public $category_id;
+    public $name_category;
+    public $description;
     public function __construct()
     {
         parent::__construct();

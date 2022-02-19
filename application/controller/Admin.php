@@ -49,7 +49,6 @@ class Admin extends Controller
         }
 
 
-
     }
 
     public function index_view()

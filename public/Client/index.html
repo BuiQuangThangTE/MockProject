@@ -12,7 +12,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </script>
     <link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 
-    <script src="../js/jquery-1.11.1.min.js"></script>
+    <!-- <script src="../js/jquery-1.11.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../plugins/bootstrap3-editable-1.5.1/bootstrap3-editable/css/bootstrap-editable.css">
     <script src="../plugins/bootstrap3-editable-1.5.1/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
@@ -231,7 +232,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-9 blog-left">
                 <div class="tech-no" id="list_blog" style="width:auto">
                     <!-- nội dung Bài viết-->
-                    
+
                 </div>
             </div>
 
@@ -245,7 +246,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <!-- <form>
                                 <input id="search" type="search" name="Search" required="" placeholder="Search">
                             </form> -->
-                            <form  method="post" id="form_search">
+                            <form method="post" id="form_search">
                                 <input type="search" name="search" id="search" required="">
                                 <input type="submit" id="search_btn" value=" ">
                             </form>
@@ -253,50 +254,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="results_search">
                             <ul id="results_search"></ul>
                         </div>
-                        <h4>Bài viết phổ biến</h4>
+
                         <div class="blog-grids">
                             <div class="blog-grids" id="popular_blog">
                                 <!-- post ppho bien -->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="blog-grids" id="related_blog">
+                                <!-- post liên quan-->
                             </div>
                             <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
-                <!-- technology-right -->
-            </div>
-        </div>
-        <!-- Chi tiết bài viet -->
-        <div class="detail_blogs" id="">
-            <div class="detail_blogs">
-                <div class="col-md-9 technology-left">
-                    <div class="agileinfo" id="detail_blog">
-                        <!-- chi tiet tại đây -->
-                    </div>
-                </div>
-                <!--Bài viết liên quan -->
-                <!-- <div class="col-md-3 technology-right" id="box-right">
-                    <div class="blo-top1">
-                        <div class="tech-btm">
-                            <div class="search-1">
-                                <form action="#" method="post">
-                                    <input type="search" name="Search" value="Search" onfocus="this.value = '';"
-                                        onblur="if (this.value == '') {this.value = 'Search';}" required="">
-                                    <input type="submit" value=" ">
-                                </form>
-                            </div>
-                            <h4>Bài viết liên quan </h4>
-                            <div class="blog-grids" id="lienQuan">
 
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div> -->
             </div>
         </div>
     </div>
+
 
 
 
@@ -334,17 +310,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         .logo.wow.fadeInDown.animated {
             padding-top: 100px;
         }
+
         .results_search {
-    position: absolute;
-    margin: 39px 0 0 0;
-    top: 5%;
-    /* width: 73%; */
-    background-color: rgba(255,255,255, 0.8);
-    z-index: 1000;
-    display: none;
-    max-height: 200px;
-    overflow: hidden;
-}
+            position: absolute;
+            margin: 39px 0 0 0;
+            top: 5%;
+            /* width: 73%; */
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 1000;
+            display: none;
+            max-height: 200px;
+            overflow: hidden;
+        }
+
         .footer {
             background: #303030;
             padding: 3em 0;

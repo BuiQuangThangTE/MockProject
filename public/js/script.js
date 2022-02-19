@@ -1,109 +1,97 @@
 $(document).ready(function () {
     function start() {
-        home();
-        phoBien();
+        // home();
+        homePage(1);
+        populars();
         $('#list_blog').children().remove();
+        $('#related_blog').children().remove();
     }
     start();
+
     $(document).on("click", '.cate_home', function (e) {
         e.preventDefault();
-        console.log(e);
         start();
 
     })
     $(document).on("click", '.cate', function (e) {
         e.preventDefault();
         let id = $(e.target).data('id')
-        console.log(id);
-        related(id);
+        categories(id);
+        $('#related_blog').children().remove();
 
     })
     $(document).on("click", '.detail', function (e) {
         e.preventDefault();
         let id = $(e.target).data('id')
-        console.log(e);
+        // console.log(e);
+        // $('#popular_blog').children().remove();
         detail(id);
+        $('#results_search').children().remove();
+    })
+    $(document).on('click', '.page-link', function (e) {
+        console.log('clicked')
+        e.preventDefault();
+        $('#list_blog').children().remove();
+        let page = $(e.target).data('page');
+        homePage(page);
     })
     //View index 
-    function home() {
-
-        var getPost = 'http://localhost:8000/api/read'
-        fetch(getPost)
-            .then(function (response) {
-                return response.json();
-            }).then(function (blogs) {
+    function homePage(page) {
+        var getPost = 'http://localhost:8000/Api/getBlog/'
+        fetch(getPost + page)
+            .then(response => response.json())
+            .then(function (data) {
                 var listBlogs = $("#list_blog")
-                // console.log(blogs);
-                let blog = Object.values(blogs);
-                // console.log(blog);
-                if (blog.length) {
-                    // console.log(blog.length);
-                    let str = ""
-                    for (let i = 0; i < blog.length - 1; i++) {
-                        str += `
-                        <div class="wthree">
-                            <div class="col-md-4 wthree-left wow fadeInDown animated" data-wow-duration=".8s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInDown;">
-                                <div class="tch-img">
-                                    <a href=""><img src="http://localhost:8000/${blog[i].image}" class="img-responsive" alt="" style="width: 300px; height: 200px;"></a>
+                let blogs = data.post
+                let str = ""
+                blogs.forEach(blog => {
+                    str += `<div class="wthree">
+                                <div class="col-md-4 wthree-left wow fadeInDown animated" data-wow-duration=".8s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInDown;">
+                                    <div class="tch-img">
+                                        <a href=""><img src="http://localhost:8000/${blog.image}" class="img-responsive" alt="" style="width: 300px; height: 200px;"></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-8 wthree-right wow fadeInDown animated" data-wow-duration=".8s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInDown;">
-                                <h3>
-                                    <a href="#">${blog[i].title}</a>
-                                </h3>
-                                <h6>
-                                    <a href="#">At</a> ${blog[i].created_at} </h6>
-                                <p>${blog[i].description}</p>
-                                <div class="bht1">
-                                    <a class="detail" data-id=${blog[i].blog_id} " >Read More</a>
-                                </div>
-                                <div class="soci">
-                                    <ul>
-
-                                        <li class="hvr-rectangle-out"><a class="twit" href="#"></a></li>
-                                        <li class="hvr-rectangle-out"><a class="pin" href="#"></a></li>
-                                    </ul>
+                                <div class="col-md-8 wthree-right wow fadeInDown animated" data-wow-duration=".8s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInDown;">
+                                    <h3>
+                                        <a href="#">${blog.title}</a>
+                                    </h3>
+                                    <h6>
+                                        <a href="#">At</a> ${blog.created_at} </h6>
+                                    <p>${blog.description}</p>
+                                    <div class="bht1">
+                                        <a class="detail" data-id=${blog.blog_id} " >Read More</a>
+                                    </div>
+                                    <div class="soci">
+                                        <ul>
+                                            <li class="hvr-rectangle-out"><a class="twit" href="#"></a></li>
+                                            <li class="hvr-rectangle-out"><a class="pin" href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
                                 </div>
                                 <div class="clearfix"></div>
-
                             </div>
-                            <div class="clearfix"></div>
                         </div>
-                    </div>
-                </div>
-
-                    `;
-                    }
+                    </div>`;
+                })
+                str += `
+                        <nav aria-label="..." >
+                            <ul class="pagination">
+                        `;
+                for (let i = 1; i <= data.number_page; i++) {
                     str += `
-                        <nav aria-label="...">
-                        <ul class="pagination">
-                        <li class="page-item disabled">
-                            <span class="page-link">Previous</span>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item active">
-                            <span class="page-link">
-                            2
-                            <span class="sr-only">(current)</span>
-                            </span>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                        </li>
-                        </ul>
-                    </nav>
-                    
-                    `;
-                    listBlogs.append(str);
+                            <li class="${i == page ? 'active' : ''}  page-item"><a class="page-link" data-page=${i}>${i}</a></li>
+                         `;
                 }
+                // 
+                listBlogs.append(str);
             }).catch(function (err) {
                 // console.log('Loi');
             });
-    };
+    }
 
     // Bai viet pho bien
-    function phoBien() {
+    function populars() {
         // Baif viet pho bien
         var popularPost = 'http://localhost:8000/api/getPopular';
         fetch(popularPost)
@@ -116,24 +104,26 @@ $(document).ready(function () {
                 // console.log(blog);
                 if (popular.length) {
                     // console.log(popular.length);
-                    let str = ""
+                    let str = " <h4>Bài viết phổ biến</h4>"
                     for (let i = 0; i < popular.length - 1; i++) {
                         // console.log(popular[i]);
                         str += ` 
-                        <div class="blog-grid-left">
-                            <a href="#"><img src="http://localhost:8000/${popular[i].image}" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="blog-grid-right">
-                            <h5><a class="detail" data-id=${popular[i].blog_id}>${popular[i].title}</a></h5>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="clearfix"></div>
-                    `;
+                            <div class="blog-grid-left">
+                                <a href="#"><img src="http://localhost:8000/${popular[i].image}" class="img-responsive" alt=""></a>
+                            </div>
+                            <div class="blog-grid-right">
+                                <h5><a class="detail" data-id=${popular[i].blog_id}>${popular[i].title}</a></h5>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="clearfix"></div>
+                        `;
                     }
                     popularPosts.innerHTML = str;
                 }
+
             })
     }
+
     // Bai viet chi tiet
     function detail(id) {
         // document.getElementById("detail_blogs").style.display = 'block';
@@ -147,52 +137,83 @@ $(document).ready(function () {
                 // document.getElementById("listBlog").style.display = 'none';
 
                 // console.log(blog);
-                // $('#list_blog').children().remove();
+                $('#populars').children().remove();
                 let str = ""
                 str += ` 
-                <div>
-                    <h2 class="w3">SINGLE PAGE</h2>
-                    <div class="single">
-                        <img src="http://localhost:8000/${blog.image}" class="img-responsive" alt="">
-                        <div class="b-bottom">
-                            <h5 class="top">${blog.title}</h5>
-                            <p>${blog.content}<a class="span_link" href=""><span class="glyphicon glyphicon-comment"></span>0                            </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>10 </a>
-                            </p>
-    
+                    <div>
+                        <h2 class="w3">SINGLE PAGE</h2>
+                        <div class="single">
+                            <img src="http://localhost:8000/${blog.image}" class="img-responsive" alt="">
+                            <div class="b-bottom">
+                                <h5 class="top">${blog.title}</h5>
+                            </div>
+                            <p>${blog.content}</p> 
                         </div>
-                    </div>
-                    <div class="clearfix"></div>
-                   
+                        
                         <div class="clearfix"></div>
-                </div>
-                <div class="coment-form">
-                    <h4>Leave your comment</h4>
-                    <input type="hidden" value="">
-                    <input type="hidden" value="">
-                    <input type="hidden" id="reply_to_username" value="">
-                    <?php
-                    if (isset($_SESSION["login"])) {
-            
-                        <form action="#" method="post">
-                            <input type="text" value="To" name="reply_to" id="reply_to" onfocus="this.value = '';"
-                                onblur="if (this.value == '') {this.value = 'Name';}" required=""
-                                style="display: none">
-                            <input type="email" value="Email" name="email" onfocus="this.value = '';onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                            <input type="text" value="Website" name="websie" onfocus="this.value = '';"onblur="if (this.value == '') {this.value = 'Website';}" required="">
-                            <textarea onfocus="this.value = '';"onblur="if (this.value == '') {this.value = 'Your Comment...';}" required=""id="comment-detail">Your Comment...</textarea>
-                            <input type="button" value="Submit Comment"onclick="submitComment()">
-                        </form>
-                      
-                </div>
-                    `;
+                       
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="coment-form">
+                        <h4>Leave your comment</h4>
+                        <input type="hidden" value="">
+                        <input type="hidden" value="">
+                        <input type="hidden" id="reply_to_username" value="">
+                       
+                
+                            <form action="#" method="post">
+                                <input type="text" value="To" name="reply_to" id="reply_to" onfocus="this.value = '';"
+                                    onblur="if (this.value == '') {this.value = 'Name';}" required=""
+                                    style="display: none">
+                                <input type="email" value="Email" name="email" onfocus="this.value = '';onblur="if (this.value == '') {this.value = 'Email';}" required="">
+                                <input type="text" value="Website" name="websie" onfocus="this.value = '';"onblur="if (this.value == '') {this.value = 'Website';}" required="">
+                                <textarea onfocus="this.value = '';"onblur="if (this.value == '') {this.value = 'Your Comment...';}" required=""id="comment-detail">Your Comment...</textarea>
+                                <input type="button" value="Submit Comment"onclick="submitComment()">
+                            </form>
+                          
+                    </div>
+                        `;
                 detail_blog.html(str);
-                // console.log(detail_blog);
-                // related(blog.category_id);
+                related(blog.category_id);
             })
 
     }
-    // Bài viết theo category
+    // Bai viet liên quan
     function related(id) {
+        var bvlq = 'http://localhost:8000/api/related_posts/';
+        fetch(bvlq + id)
+            .then(function (response) {
+                return response.json();
+            }).then(function (bvlq) {
+                var detail_blog = $("#related_blog")
+                let lq = Object.values(bvlq);
+                if (lq.length) {
+                    let str = '<h4>Bài viết liên quan</h4>';
+                    console.log(lq);
+                    for (let i = 0; i < lq.length - 1; i++) {
+                        str += ` 
+                                    
+                                    <div class="blog-grid-left">
+                                        <a href="#"><img src="http://localhost:8000/${lq[i].image}" class="img-responsive" alt=""></a>
+                                    </div>
+                                    <div class="blog-grid-right">
+                                        <h5><a class="detail" data-id=${lq[i].blog_id}>${lq[i].title}</a></h5>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                                `;
+                    }
+                    detail_blog.children().remove();
+                    detail_blog.append(str);
+                }
+            })
+        // .catch(function (err) {
+        //     str='';
+        //     detail_blog.append(str);
+        // });
+    }
+    // Bài viết theo category
+    function categories(id) {
         var bvlq = 'http://localhost:8000/api/related_posts/';
         fetch(bvlq + id)
             .then(function (response) {
@@ -200,38 +221,38 @@ $(document).ready(function () {
             }).then(function (bvlq) {
                 var detail_blog = $("#list_blog")
                 let lq = Object.values(bvlq);
-                if (lq.length ) {
+                if (lq.length) {
                     let str = '';
                     console.log(lq);
-                    for (let i = 0; i < lq.length-1  ; i++) {
-                            str += ` 
-                                    <div class="col-md-4 blog-grid" style="height: 500px ">
-                                        <div class="blog-grid-left1">
-                                        <a class="detail" data-id=${lq[i].blog_id} ><img src="http://localhost:8000/${lq[i].image}" alt=" "
-                                        class="img-responsive" style="width: 300px; height: 200px;"></a>
-                                        </div>
-                                        <div class="blog-grid-right1">
-                                        <a class="detail" data-id=${lq[i].blog_id}>${lq[i].title}</a>
-                                            <h4><?php echo $music["created_at"] ?></h4>
-                                            <p>${lq[i].description}</p>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="more m1">
-                                        <a class="detail" data-id=${lq[i].blog_id} >Read More</a>
-                                        </div>
-                             
-                            <div class="clearfix"></div>
-                        </div>      
-            `;
+                    for (let i = 0; i < lq.length - 1; i++) {
+                        str += ` 
+                                        <div class="col-md-4 blog-grid" style="height: 500px ">
+                                            <div class="blog-grid-left1">
+                                            <a class="detail" data-id=${lq[i].blog_id} ><img src="http://localhost:8000/${lq[i].image}" alt=" "
+                                            class="img-responsive" style="width: 300px; height: 200px;"></a>
+                                            </div>
+                                            <div class="blog-grid-right1">
+                                            <a class="detail" data-id=${lq[i].blog_id}>${lq[i].title}</a>
+                                                <h4><?php echo $music["created_at"] ?></h4>
+                                                <p>${lq[i].description}</p>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="more m1">
+                                            <a class="detail" data-id=${lq[i].blog_id} >Read More</a>
+                                            </div>
+                                 
+                                <div class="clearfix"></div>
+                            </div>      
+                `;
                     }
                     detail_blog.children().remove();
                     detail_blog.append(str);
                 }
             })
-            // .catch(function (err) {
-            //     str='';
-            //     detail_blog.append(str);
-            // });
+        // .catch(function (err) {
+        //     str='';
+        //     detail_blog.append(str);
+        // });
     }
 
     //Login
@@ -263,48 +284,16 @@ $(document).ready(function () {
                 }
             }
         })
-        // sessionStorage.setItem('user', username);
+        sessionStorage.setItem('user', username);
         // sessionStorage.setItem('pass',password);
 
     });
 
-    
-    
-});
-
-$(document).ready(function () {
-
-    $(document).on('submit', '#form_search', function (e) {
-        e.preventDefault();
-        var search = $("#search").val();
-        console.log($(this).serialize())
-        $.ajax({
-            method: "post",
-            url: "http://localhost:8000/api/search/",
-            data: {
-                search: search,
-                action: "search"
-            },
-            success:function (data) {
-                data = JSON.parse(data);
-                console.log(data);
-                var html = "";
-
-                // console.log(data.length);
-                for (var i = 0; i < data.length; i++)
-                {
-                    html += "<a>" + data[i].title  +"</a></br>";
-
-                }
-                $("#results_search").append(html);
-            }
-        })
-    })
-    $("#search").keyup(function () {
-        var search =  $("#search").val();
-        if (search == ""){
-            $(".results_search").css("display", "none");
-        }else {
+    // search
+    $(document).ready(function () {
+        $(document).on('submit', '#form_search', function (e) {
+            e.preventDefault();
+            var search = $("#search").val();
             $.ajax({
                 method: "post",
                 url: "http://localhost:8000/api/search/",
@@ -312,26 +301,46 @@ $(document).ready(function () {
                     search: search,
                     action: "search"
                 },
-                success:function (data) {
-                    console.log(data);
-                    $(".results_search").css("display", "block");
+                success: function (data) {
                     data = JSON.parse(data);
+                    console.log(data);
+                    var html = "";
+                    // console.log(data.length);
+                    for (var i = 0; i < data.length; i++) {
+                        html += "<a>" + data[i].title + "</a></br>";
+                    }
+                    $("#results_search").append(html);
+                }
+            })
+        })
+        $("#search").keyup(function () {
+            var search = $("#search").val();
+            if (search == "") {
+                $(".results_search").css("display", "none");
+            } else {
+                $.ajax({
+                    method: "post",
+                    url: "http://localhost:8000/api/search/",
+                    data: {
+                        search: search,
+                        action: "search"
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        $(".results_search").css("display", "block");
+                        data = JSON.parse(data);
 
                         var html = "";
-                        for (var i = 0; i < data.length; i++)
-                        {
+                        for (var i = 0; i < data.length; i++) {
                             html += `<li><a class="detail" data-id=${data[i].blog_id} " >${data[i].title} </a></li>`;
 
                         }
                         $("#results_search").html(html);
 
-                }
-            })
-        }
-
+                    }
+                })
+            }
+        })
 
     })
-
-
-    
 })

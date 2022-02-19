@@ -1,9 +1,11 @@
 <?php
+
 class Categories extends Controller
 {
     public $category_id;
     public $name_category;
     public $description;
+
     public function index()
     {
         $totalCate = $this->model('category')->getCategory();
@@ -47,13 +49,13 @@ class Categories extends Controller
         require APP . "view/admin/edit_category.php";
         require APP . "view/admin/__templates/footer.php";
     }
-    public function delete ()
+
+    public function delete()
     {
-        if (isset($_POST['action']) == "delete")
-        {
+        if (isset($_POST['action']) == "delete") {
             $category_id = $_POST['id'];
-            if ($this->model('category')->delete_cate($category_id)){
-                Response::json(200,'delete_thanhcong');
+            if ($this->model('category')->delete_cate($category_id)) {
+                Response::json(200, 'delete_thanhcong');
             }
         }
     }
