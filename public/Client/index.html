@@ -20,12 +20,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="https://pagination.js.org/dist/2.1.5/pagination.js"></script>
 
 
-
-    <!--    -->
-    <!--    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
-    <!--    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
-
-
+    
     <script src="../js/script.js"></script>
     <link href="../css/style.css" rel='stylesheet' type='text/css' />
     <!-- animation-effect -->
@@ -68,11 +63,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
                             <nav class="link-effect-7" id="link-effect-7">
-                                <ul class="nav navbar-nav">
-                                    <li class="active act cate_home"><a href="#" data-id="home">Home</a></li>
-                                    <li class="cate"><a href="#" data-id="1">Travel</a></li>
-                                    <li class="cate"><a href="#" data-id="2">Fashion</a></li>
-                                    <li class="cate"><a href="#" data-id="3">Music</a></li>
+                                <ul class="nav navbar-nav" id="list_category">
+                                    
                                 </ul>
                             </nav>
                         </div>
@@ -94,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="login wow fadeInRight animated animated" data-wow-delay=".5s"
                     style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
                     <li id="username">
-                        <a class='btn button_login' data-toggle='modal' data-target='#myModal'>Login</a>
+                        <a class='btn button_login' data-toggle='modal' data-target='#myModal' id="login">Login</a>
                     </li>
                 </div>
             </div>
@@ -128,7 +120,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="col-md-12" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                <li class="active"><a data-toggle="tab">Login</a></li>
                                 <li><a href="#Registration" data-toggle="tab">Registration</a></li>
                             </ul>
                             <!-- Tab panes -->
@@ -159,15 +151,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 <button type="submit" class="btn btn-primary btn-sm">
                                                     Login
                                                 </button>
-                                                <a href="/reset">Quên mật khẩu</a>
+                                                <a ></a>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="tab-pane" id="Registration">
                                     <p class="error" style="color: #990000; text-align: center;"></p>
-                                    <form role="form" class="form-horizontal">
-
+                                    <form role="form" class="form-horizontal" id="form_registration">
                                         <div class="form-group">
                                             <label for="username" class="col-sm-2 control-label">
                                                 Username</label>
@@ -196,11 +187,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             <div class="col-sm-2">
                                             </div>
                                             <div class="col-sm-10">
-                                                <button type="button" class="btn btn-primary btn-sm"
-                                                    onclick="register()">
+                                                <button type="submit" class="btn btn-primary btn-sm">
                                                     Register
                                                 </button>
-                                                <button type="button" class="btn btn-default btn-sm">
+                                                <button type="button" class="btn btn-default btn-sm cate_home">
                                                     Cancel
                                                 </button>
                                             </div>
