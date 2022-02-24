@@ -19,8 +19,7 @@ class Posts extends Controller
     {
         if ($_SESSION['id_group'] == 1) {
             $trang = isset($_GET['trang']) ? $_GET['trang'] : 1;
-            $totalPosts = $this->model('post')->getTotal();
-            $so_post = count($totalPosts);
+            $so_post = $this->model('post')->getTotal();
             $so_trang = ceil($so_post / 4);
             if ($so_post < 4) {
                 $trang_hien_tai = 0;

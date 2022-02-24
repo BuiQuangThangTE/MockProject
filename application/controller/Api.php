@@ -15,9 +15,9 @@ class Api extends Controller
             $blog_arr = array(
                 'blog_id' => $blog->blog_id,
                 'title' => $blog->title,
-                'content' => $blog->content,
+                'content' => html_entity_decode($blog->content),
                 'image' => $blog->image,
-                'description' => html_entity_decode($blog->description),
+                'description' => $blog->description,
                 'user_id' => $blog->user_id,
                 'category_id' => $blog->category_id,
                 'name_category' => $blog->name_category,
@@ -65,9 +65,9 @@ class Api extends Controller
                 $blog_item = array(
                     'blog_id' => $blog_id,
                     'title' => $title,
-                    'content' => $content,
+                    'content' => html_entity_decode($content),
                     'image' => $image,
-                    'description' => html_entity_decode($description),
+                    'description' => $description,
                     'user_id' => $user_id,
                     'category_id' => $category_id,
                     // 'name_category' => $name_category,
@@ -97,8 +97,7 @@ class Api extends Controller
 
     public function getBlog($trang)
     {
-        $totalPosts = $this->model('post')->getTotal();
-        $so_post = count($totalPosts);
+        $so_post = $this->model('post')->getTotal();
         $so_trang = ceil($so_post / 4);
         if ($so_post < 4) {
             $trang_hien_tai = 0;
@@ -113,6 +112,10 @@ class Api extends Controller
         ];
 
         Response::json(200, $arr);
+    }
+    public function getCate(){
+        $cate = $this->model('post')->getCategory();
+        Response::json(200,$cate);
     }
 }
 

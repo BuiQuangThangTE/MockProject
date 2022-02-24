@@ -23,6 +23,15 @@ class Users extends Controller
         }
     }
 
+    public function register()
+    {
+
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+            $email = $_POST['email'];
+            $error = [];
+
+        }
     public function index()
     {
         if ($_SESSION['id_group'] == 1) {
