@@ -1,11 +1,12 @@
 $(document).ready(function () {
-    function start() {
-        
+    
+    function start() {    
         homePage(1);
         populars();
         category();
         $('#list_blog').children().remove();
         $('#related_blog').children().remove();
+        $('#comment').css('display','none');      
     }
     start();
 
@@ -19,6 +20,7 @@ $(document).ready(function () {
         let id = $(e.target).data('id')
         categories(id);
         $('#related_blog').children().remove();
+        $('#comment').css('display','none'); 
 
     })
     $(document).on("click", '.detail', function (e) {
@@ -86,6 +88,7 @@ $(document).ready(function () {
                 }
                 // 
                 listBlogs.append(str);
+                
             }).catch(function (err) {
                 // console.log('Loi');
             });
@@ -155,20 +158,12 @@ $(document).ready(function () {
                        
                         <div class="clearfix"></div>
                     </div>
-                    <div class="coment-form">
-                        <h4>Leave your comment</h4>
-                        <input type="hidden" value="">
-                        <input type="hidden" value="">
-                        <input type="hidden" id="reply_to_username" value="">
-                            <form action="#" method="post">
-                                <textarea onfocus="this.value = '';"onblur="if (this.value == '') {this.value = 'Your Comment...';}" required=""id="comment-detail">Your Comment...</textarea>
-                                <input type="button" value="Submit Comment"onclick="submitComment()">
-                            </form>
-                          
-                    </div>
                         `;
+                
                 detail_blog.html(str);
+                $('#comment').css('display','block');  
                 related(blog.category_id, blog.blog_id);
+
             })
 
     }
@@ -207,10 +202,7 @@ $(document).ready(function () {
                 detail_blog.append(str);
 
             })
-        // .catch(function (err) {
-        //     str='';
-        //     detail_blog.append(str);
-        // });
+  
     }
     // Bài viết theo category
     function categories(id) {
@@ -251,10 +243,7 @@ $(document).ready(function () {
                     detail_blog.append(str);
                 }
             })
-        // .catch(function (err) {
-        //     str='';
-        //     detail_blog.append(str);
-        // });
+  
     }
     // Lấy danh muc navbar
     function category() {
@@ -333,12 +322,13 @@ $(document).ready(function () {
                 },
                 success: function (data) {
                     data = JSON.parse(data);
-                    console.log(data);
+                    // console.log(data);
                     var html = "";
                     // console.log(data.length);
                     for (var i = 0; i < data.length; i++) {
                         html += "<a>" + data[i].title + "</a></br>";
                     }
+                    $("#results_search").children().remove();
                     $("#results_search").append(html);
                 }
             })
@@ -362,7 +352,7 @@ $(document).ready(function () {
 
                         var html = "";
                         for (var i = 0; i < data.length; i++) {
-                            html += `<li><a class="detail" data-id=${data[i].blog_id} " >${data[i].title} </a></li>`;
+                            html += `<li><a class="detail" style="color: #303030;" data-id=${data[i].blog_id} " >${data[i].title} </a></li>`;
                         }
                         $("#results_search").html(html);
                     }

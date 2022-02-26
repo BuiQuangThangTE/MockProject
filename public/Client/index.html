@@ -12,15 +12,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </script>
     <link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 
-    <!-- <script src="../js/jquery-1.11.1.min.js"></script> -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../plugins/bootstrap3-editable-1.5.1/bootstrap3-editable/css/bootstrap-editable.css">
-    <script src="../plugins/bootstrap3-editable-1.5.1/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+    <!-- <link rel="stylesheet" href="../plugins/bootstrap3-editable-1.5.1/bootstrap3-editable/css/bootstrap-editable.css"> -->
+    <!-- <script src="../plugins/bootstrap3-editable-1.5.1/bootstrap3-editable/js/bootstrap-editable.min.js"></script> -->
     <script src="https://pagination.js.org/dist/2.1.5/pagination.js"></script>
 
 
-    
+
     <script src="../js/script.js"></script>
     <link href="../css/style.css" rel='stylesheet' type='text/css' />
     <!-- animation-effect -->
@@ -36,6 +36,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0"
+        nonce="H4tifY7b"></script>
+
     <!-- Begin header -->
     <div class="header" id="ban">
         <div class="container">
@@ -64,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
                             <nav class="link-effect-7" id="link-effect-7">
                                 <ul class="nav navbar-nav" id="list_category">
-                                    
+
                                 </ul>
                             </nav>
                         </div>
@@ -151,7 +155,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 <button type="submit" class="btn btn-primary btn-sm">
                                                     Login
                                                 </button>
-                                                <a ></a>
+                                                <a></a>
                                             </div>
                                         </div>
                                     </form>
@@ -204,7 +208,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
     </div>
-
     <!-- End Header -->
 
     <!--Bắt đầu Nội dung -->
@@ -216,18 +219,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
     </div>
-    <div class="main">
+    <div id="main" class="main">
         <!-- Tat cả bài viet -->
         <div id="listBlog">
             <div class="col-md-9 blog-left">
                 <div class="tech-no" id="list_blog" style="width:auto">
                     <!-- nội dung Bài viết-->
-
                 </div>
             </div>
-
             <!-- Bài viết phổ biến -->
-            <div class="col-md-3 blog-right">
+            <div class="col-md-3 blog-right" style="z-index: 999;">
                 <div class="blo-top1">
                     <div class="tech-btm">
                         <div class="search-1 wow fadeInDown animated" id="search_home" data-wow-duration=".8s"
@@ -241,8 +242,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <input type="submit" id="search_btn" value=" ">
                             </form>
                         </div>
-                        <div class="results_search">
-                            <ul id="results_search"></ul>
+                        <div class="results_search" >
+                            <ul id="results_search" ></ul>
                         </div>
 
                         <div class="blog-grids">
@@ -261,50 +262,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
             </div>
         </div>
+
     </div>
-
-
-
-
-
-
-
+    <div id="comment" class="fb-comments" data-href="http://127.0.0.1:5500/public/Client/index.html" data-width="800"
+        data-numposts="5"> </div>
     <!-- Begin Footer -->
-    <!-- <div class="footer" ">
-    <div class="container">
-    
-        <div class="col-md-4 footer-middle wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s">
-            <h4>Latest Tweet</h4>
-            <div class="mid-btm">
-                <p>Sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod .</p>
-                <a href="https://w3layouts.com/">https://w3layouts.com/</a>
+    <!-- <div class="footer" id="footer">
+        <div class="container">
+
+            <div class="col-md-4 footer-middle wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s">
+                <h4>Latest Tweet</h4>
+                <div class="mid-btm">
+                    <p>Sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod .
+                    </p>
+                    <a href="https://w3layouts.com/">https://w3layouts.com/</a>
+                </div>
+            </div>
+            <div class="col-md-4 footer-right wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s">
+                <h4>Newsletter</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+
+                <div class="clearfix"></div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="copyright wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s" style="">
+            <div class="container" style="height: auto;">
+                <p>© Style Blog. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
             </div>
         </div>
-        <div class="col-md-4 footer-right wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s">
-            <h4>Newsletter</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
 
-            <div class="clearfix"></div>
+    </div> -->
 
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
-<div class="copyright wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".2s" style="">
-    <div class="container" style="height: auto;">
-        <p>© Style Blog. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-    </div>
-</div> -->
-    <!-- End Footer -->
     <style>
         .logo.wow.fadeInDown.animated {
             padding-top: 100px;
         }
-        
-        .single p{
+
+        .single p {
             width: calc(100vw - 63%) !important;
-            
+
         }
+
         .results_search {
             position: absolute;
             margin: 39px 0 0 0;
@@ -321,6 +322,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             background: #303030;
             padding: 3em 0;
             margin-top: 3em;
+            /* display: flex; */
+
+            /* position: relative; */
         }
 
         element.style {
