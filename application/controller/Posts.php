@@ -3,17 +3,6 @@
 class Posts extends Controller
 {
 
-
-    public function delete()
-    {
-        if (isset($_POST['action']) == "delete") {
-            $blog_id = $_POST['id'];
-            if ($this->model('post')->delete_blog($blog_id)) {
-                Response::json(200, 'delete_thanhcong');
-            }
-        }
-    }
-
 //    PHP
     public function index()
     {
@@ -35,6 +24,7 @@ class Posts extends Controller
             require APP . "view/admin/__templates/footer.php";
         } else {
             header("location:" . URL);
+            exit();
         }
 
     }
@@ -97,6 +87,17 @@ class Posts extends Controller
                 }
             }
 
+        }
+    }
+
+
+    public function delete()
+    {
+        if (isset($_POST['action']) == "delete") {
+            $blog_id = $_POST['id'];
+            if ($this->model('post')->delete_blog($blog_id)) {
+                Response::json(200, 'delete_thanhcong');
+            }
         }
     }
 

@@ -40,10 +40,10 @@ class Admin extends Controller
     public function logout()
     {
         if (isset($_POST['logout-ad'])) {
-//            unset($_SESSION['login']);
-//            unset($_SESSION['username']);
-//            unset($_SESSION['id_user']);
-//            unset($_SESSION['id_group']);
+            unset($_SESSION['login']);
+            unset($_SESSION['username']);
+            unset($_SESSION['id_user']);
+            unset($_SESSION['id_group']);
             unset($_SESSION['login']);
             header('location:' . URL);
         }

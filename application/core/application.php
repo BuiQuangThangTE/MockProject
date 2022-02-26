@@ -3,7 +3,7 @@
 class Application
 {
 
-    private $url_controller = 'admin';
+    private $url_controller = 'Admin';
     private $url_action = 'login';
     private $url_params = array();
 
@@ -35,7 +35,7 @@ class Application
                     $this->url_controller->index();
                 }
                 else{
-                    header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
+                    // header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
                     die();
                 }
             }

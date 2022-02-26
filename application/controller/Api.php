@@ -17,7 +17,7 @@ class Api extends Controller
                 'title' => $blog->title,
                 'content' => html_entity_decode($blog->content),
                 'image' => $blog->image,
-                'description' => $blog->description,
+                'description' => html_entity_decode($blog->description),
                 'user_id' => $blog->user_id,
                 'category_id' => $blog->category_id,
                 'name_category' => $blog->name_category,
@@ -25,7 +25,7 @@ class Api extends Controller
             );
             Response::json(200, $blog_arr);
         } else {
-            Response::json(200, []);
+            Response::json(404);
         }
     }
 
@@ -113,6 +113,7 @@ class Api extends Controller
 
         Response::json(200, $arr);
     }
+
     public function getCate(){
         $cate = $this->model('post')->getCategory();
         Response::json(200,$cate);
